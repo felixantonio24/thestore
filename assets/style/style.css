@@ -1,0 +1,144 @@
+
+*,*::after,*::before {
+  box-sizing: border-box;
+ padding: 0%;
+ margin: 0%;
+
+}
+nav {
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+  padding: 2% 1%;
+  background-color: #333;
+  opacity:0;
+  animation: aparecer 1s ease-in-out forwards;
+}
+@keyframes aparecer {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+}
+
+ul li a:hover{
+    background-color: #555;
+    
+}
+
+.Titulo-principal {
+  font-family: "Permanent Marker", 
+  cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16rem;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  color: #352929;
+  text-shadow: 2px 2px 1px rgba(26, 22, 22, 0.3);
+}
+
+.header {
+    border-bottom: 5rem solid #352929;
+   animation: aparecer 2s ease-in-out forwards;
+}
+
+.container{
+    display: flex;
+flex-wrap:wrap;
+padding: 20px;
+    justify-content: center;
+
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1200px;
+ 
+}
+.div{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.card {
+  border: 1px solid #5f5454;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px; 
+  background-color: rgb(252, 252, 252);
+  width: 15rem;
+  height: auto;
+  transition: all 0.3s ease;
+  animation: aparecer 1s ease-in-out forwards;
+
+}
+.card:hover{
+    filter: drop-shadow(42px 5px 5px rgba(201, 8, 8, 0.2));
+    transform: scale(1.05);
+
+}
+
+
+.product-image {
+  width: 12rem;
+  height: 12rem;
+  border-radius: 5px;
+
+}
+
+.product-image:hover {
+
+  transition: back  0.3s ease;
+filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.945));
+  cursor: pointer;
+}
+
+
+.titulo {
+  font-size: 1rem;
+  color: #352929;
+  margin: 10px 0;
+}
+
+.card .product-image :hover {
+filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.945));
+}
+.add-to-cart{
+    background-color: #352929;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.6s ease;
+}
+
+
+.add-to-cart:hover {
+    background-color: #e00808;
+
+}
